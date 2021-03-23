@@ -26,8 +26,6 @@ def login():
             flash('Email does not exist.', category='error')
 
     return render_template("login.html", user=current_user)
-    while True:
-        flash('Did you know? Aarjit is intelligent, smart, genius etc etc.' category='success')
 
 
 @auth.route('/logout')
