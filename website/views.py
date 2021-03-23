@@ -20,8 +20,6 @@ def home():
             db.session.add(new_note)
             db.session.commit()
             flash('Note added!', category='success')
-            while True:
-                flash('Do you know Aarjit is Genius', category='success')
 
     return render_template("home.html", user=current_user)
 
